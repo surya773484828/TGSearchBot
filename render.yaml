@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: tgsearch-bot
+    env: python
+    plan: free
+    runtime: python
+    pythonVersion: 3.11.8
+    buildCommand: pip install -r requirements.txt
+    startCommand: python TGSearchBot.py
